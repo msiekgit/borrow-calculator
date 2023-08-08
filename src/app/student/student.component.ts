@@ -12,7 +12,6 @@ export class StudentComponent {
 
   ngOnInit() {
     this.getAuthorizedStudents();
-
   }
 
   constructor (private borrowService : BorrowService, private fb : FormBuilder){
@@ -41,16 +40,13 @@ export class StudentComponent {
   }
 
   async getAuthorizedStudents(){
-    // this.authorizedStudents = await this.borrowService.getAuthorizedStudents()
+    this.authorizedStudents = await this.borrowService.getAuthorizedStudents()
   }
 
   async addStudent(name : string, index : number){
     this.borrowService.addStudent(name, index)
   }
 
-  async search(data : string | number){
-    this.borrowService.search(data)
-  }
   sixDigitNumberValidator(control: AbstractControl): ValidationErrors | null {
     const value = control.value;
   

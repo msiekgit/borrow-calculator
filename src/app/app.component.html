@@ -1,9 +1,37 @@
+<head>
+  <style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .column {
+      width: 25%; /* Adjust as needed */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .smallColumn {
+      width: 15%; /* Adjust as needed */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
 <header>
   <h1>Borrow a calculator</h1>
 </header>
-<main>
-  <app-student></app-student>
-</main>
-<main>
-  <app-list></app-list>
-</main>
+<div class="container">
+  <div class="smallColumn">
+    <app-student></app-student>
+  </div>
+
+  <div class="column">
+    <app-list></app-list>
+  </div>
+</div>
