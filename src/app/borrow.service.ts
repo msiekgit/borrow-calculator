@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class BorrowService {
-
+  
   constructor() { }
 
   authorizedStudents = new Map()
@@ -12,7 +12,7 @@ export class BorrowService {
   async addStudent(name : string, index : number){
     this.authorizedStudents.set(index,name)
 
-    console.log('Updated list of students: ', this.authorizedStudents )
+    // console.log('Updated list of students: ', this.authorizedStudents )
   }
 
   async search(data : string | number){

@@ -1,5 +1,13 @@
 <div>
     <h2>Add student</h2>
+    <form [formGroup]="studentForm" (ngSubmit)="submit($event)">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" name="name" formControlName="name"><br><br>
+
+        <label for="index">Index number: </label><br>
+        <input type="text" id="index" name="index" formControlName="index"><br><br>
+
+        <input type="submit" value="Add student">
+    </form>
 </div>
 
-<app-list [authorizedStudents]="authorizedStudents"></app-list>

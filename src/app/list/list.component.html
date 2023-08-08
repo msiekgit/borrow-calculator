@@ -1,3 +1,7 @@
 <h2>List of students authorized to borrow a calculator</h2>
 
-<li *ngFor="let student of authorizedStudents">{{authorizedStudents.keys}}<li>
+<ul>
+  <li *ngFor="let student of authorizedStudents | keyvalue">
+    Name: {{ student.value }}, Index number : {{ student.key }}
+  </li>
+</ul>
