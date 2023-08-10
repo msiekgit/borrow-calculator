@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {text-align: center;}
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+
+    body { font-family: "Trebuchet MS", "Lucida Sans", Arial, sans-serif;}
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column {
+      width: 25%; /* Adjust as needed */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .smallColumn {
+      width: 15%; /* Adjust as needed */
+      padding: 10px;
+      box-sizing: border-box;
+    }

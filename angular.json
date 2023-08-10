@@ -89,6 +89,10 @@
             "styles": [
               "src/styles.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles.css"]
+              },
             "scripts": []
           }
         }

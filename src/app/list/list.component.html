@@ -1,25 +1,3 @@
-<head>
-  <style>
-    h1 {text-align: center;}
-    h2 {text-align: center;}
-    h3 {text-align: center;}
-
-    table {
-      table-layout: fixed;
-      width: 100%;
-      border: 2px solid black;
-    }
-
-    td {
-      border: 1px solid black;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-   
-  </style>
-  </head>
-
 <h2>List of students authorized to borrow a calculator</h2>
 <form [formGroup]="searchForm" (ngSubmit)="submit($event)">
   <label for="name">Search for a student: </label><br>
