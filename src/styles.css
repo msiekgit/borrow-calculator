@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(159, 159, 255);
+    background: rgba(159, 159, 255, 0.8);
     border-radius: 20px;
 }
 .container .input-box{
