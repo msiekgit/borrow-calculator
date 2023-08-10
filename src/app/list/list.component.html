@@ -1,7 +1,7 @@
 <h2>List of students authorized to borrow a calculator</h2>
 <form [formGroup]="searchForm" (ngSubmit)="submit($event)">
   <label for="name">Search for a student: </label><br>
-  <input type="text" id="data" name="data" formControlName="data">
+  <input placeholder="Enter name or index of a student" class="input-box" type="text" id="data" name="data" formControlName="data">
   <input type="submit" value="Search"> <br><br>
 </form>
 <div>{{isAuthorized}} </div>

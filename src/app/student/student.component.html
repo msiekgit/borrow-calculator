@@ -1,11 +1,8 @@
 <div>
     <h2>Add student</h2>
     <form [formGroup]="studentForm" (ngSubmit)="submit($event)">
-        <label for="name">Name: </label><br>
-        <input type="text" id="name" name="name" formControlName="name"><br><br>
-
-        <label for="index">Index number: </label><br>
-        <input type="text" id="index" name="index" formControlName="index"><br><br>
+        <input class="input-box" type="text" id="name" name="name" placeholder="Name" formControlName="name"><br><br>
+        <input class="input-box" type="text" id="index" name="index" placeholder="6-digit index number" formControlName="index"><br><br>
 
         <input type="submit" value="Add student">
     </form>
