@@ -6,6 +6,11 @@ App that manages the list of people being able to borrow calculators from office
  - enter data of a student, that wants to sign up to be able to borrow a calculator (name and surname, index number, email address, mandatory consents)
  - check if a student is already authorized to borrow a calculator, by searching base of signed up students
 
+## User Stories
+- as a user, I want to able to add students to authorized list,
+- as a user, so I can check, who is authorized to borrow a calculator, I want to have do whole list of authorized students displayed,
+- as a user, so I can check if a student is authorized to borrow a calculator, I want to be able to search in the list for the student.
+
 # Template message
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
 
